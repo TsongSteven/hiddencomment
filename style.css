@@ -1,0 +1,61 @@
+@import url("https://fonts.cdnfonts.com/css/chiller");
+body {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  background-color: black;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Chiller", sans-serif;
+  font-size: 70px;
+}
+
+p {
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0 0 10px #b1adad, 0 0 20px #ff0000, 0 0 30px #c20303,
+    0 0 10px #8b0000, 0 0 20px #8b0000, 5px 5px 0px #000,
+    10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+b {
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,
+    0 0 40px #8b0000, 0 0 50px #8b0000, 5px 5px 0px #000,
+    10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-red-outline {
+  border: 0px solid #d10f0f;
+  /* border-radius: 0px; */
+  box-shadow: 0 0 10px 5px #48abe0;
+  color: #f7d8d8;
+}
+
+.horror-text {
+  color: #f7d8d8;
+  animation: flicker 2s infinite alternate, pulse 3s ease-in-out infinite;
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,
+      0 0 40px #8b0000, 0 0 50px #8b0000, 5px 5px 0px #000,
+      10px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 5px 5px 0px #000;
+  }
+}
